@@ -1,6 +1,6 @@
 //next img
 import Image from 'next/image';
-import rounded-text from "../public/rounded-text.png"
+import roundedtext from "../public/rounded-text.png";
 // next link
 import Link from 'next/link';
 
@@ -14,7 +14,7 @@ const ProjectsBtn = () => {
     w-[185px] h-[185px] flex justify-center items-center 
     bg-circleStar bg-cover bg-center bg-no-repeat group'>
       <Image
-      src={rounded-text}
+      src={roundedtext}
       width={141}
       height={148}
       alt=''
