@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    images: false,
+  images: {
+    unoptimized: false,
   },
   basePath: "/youssef-portfolio",
   reactStrictMode: true,
