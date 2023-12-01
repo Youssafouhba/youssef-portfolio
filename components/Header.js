@@ -1,6 +1,8 @@
 //next image
 import Image from "next/image"
 
+import bulb from "../public/logo.svg"
+
 //next link
 import Link from "next/link";
 
@@ -18,7 +20,7 @@ const Header = () => {
         {/** logo */}
         <Link href={'/'}>
           <Image 
-          src={'/public/logo.svg'} 
+          src={logo} 
           width={220} 
           height={48} 
           alt='' 
