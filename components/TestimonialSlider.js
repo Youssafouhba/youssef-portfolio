@@ -1,21 +1,27 @@
 // testimonial data
+
+import tavt1 from '../public/t-avt-1.png';
+import tavt2 from '../public/t-avt-2.png';
+import tavt3 from  '../public/t-avt-3.png';
+
+  
 const testimonialData = [
   {
-    image: '../public/t-avt-1.png',
+    image: 'tavt1',
     name: 'Anne Smith',
     position: 'Customer',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
-    image: '../public/t-avt-2.png',
+    image: 'tavt2',
     name: 'Jane Doe',
     position: 'Customer',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
-    image: '../public/t-avt-3.png',
+    image: 'tavt3',
     name: 'Jhon Doe',
     position: 'Customer',
     message:
