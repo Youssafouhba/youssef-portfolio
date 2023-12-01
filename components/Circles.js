@@ -2,12 +2,14 @@
 //next image
 import Image from 'next/image'
 
+import bulb from "../public/circles.png"
+
 const Circles = () => {
   return( 
   <div className='w-[200px] xl:w-[300px] absolute -right-16 -bottom-2
   mix-nlend-color-dodge animate-pulse duration-75 z-10'>
     <Image
-    src={'/public/circles.png'}
+    src={'circles}
     width={260}
     height={200}
     className='w-full h-full'
