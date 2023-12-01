@@ -2,7 +2,7 @@
 //next image
 import Image from 'next/image'
 
-import bulb from "../public/circles.png"
+import circles from "../public/circles.png"
 
 const Circles = () => {
   return( 
