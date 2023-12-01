@@ -1,12 +1,12 @@
 // next img
 import Image from "next/image";
-
+import avatar from "../../public/avatar.png"
 
 const Avatar = () => {
   return (
   <div className='hidden xl:flex xl:max-w-none'>
     <Image 
-    src={'https://github.com/Youssafouhba/youssef-portfolio/blob/main/public/avatar.png'}
+    src={avatar}
     width={737}
     height={678}
     alt=''
