@@ -1,7 +1,7 @@
 //next image
 import Image from "next/image"
 
-import bulb from "../public/logo.svg"
+import logo from "../public/logo.svg"
 
 //next link
 import Link from "next/link";
