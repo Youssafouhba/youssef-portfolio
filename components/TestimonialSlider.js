@@ -1,6 +1,6 @@
 // testimonial data
 
-import tavt1 from '../public/t-avt-1.png';
+import tavt1 from "../public/t-avt-1.png";
 import tavt2 from '../public/t-avt-2.png';
 import tavt3 from  '../public/t-avt-3.png';
 
