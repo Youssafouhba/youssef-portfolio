@@ -1,9 +1,4 @@
 // testimonial data
-
-
-import tavt2 from '../public/t-avt-2.png';
-import tavt3 from  '../public/t-avt-3.png';
-
   
 const testimonialData = [
   {
@@ -14,14 +9,14 @@ const testimonialData = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
-    image: 'tavt2',
+    image: './t-avt-2.png',
     name: 'Jane Doe',
     position: 'Customer',
     message:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
   },
   {
-    image: 'tavt3',
+    image: './t-avt-3.png',
     name: 'Jhon Doe',
     position: 'Customer',
     message:
