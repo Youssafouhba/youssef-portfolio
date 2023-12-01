@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {unoptimized: false},experimental: {images: {unoptimized: false}},
-    reactStrictMode: true,
+  experimental: {
+    images: false,
+  },
+  basePath: "/youssef-portfolio",
+  reactStrictMode: true,
   swcMinify: true,
+};
 
-}
-module.exports = nextConfig
+module.exports = nextConfig;
