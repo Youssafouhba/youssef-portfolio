@@ -1,5 +1,4 @@
-module.exports = {
-    "rules": {
-        "semi": ["error", "always"],
-    }
-};
+"extendeds": "next",
+"rules": {
+    "semi": ["error", "always"],
+}
