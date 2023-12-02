@@ -1,8 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import avatar from "./public/site-b.svg";
-import bgexplosion from "./public/bg-explosio.png";
-import bgcircles from "./public/bg-circles.png";
-import circlestar from "./public/circle-sta.svg";
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -29,13 +25,13 @@ module.exports = {
         primary: '#131424',
         secondary: '#393A47',
         accent: '#F13024',
-      },
+      },/*
       backgroundImage: {
         explosion: "url('./bg-explosio.png')",
         circles: 'url("./bg-circles.png)',
         circleStar: 'url("./circle-sta.svg")',
         site: 'url("./site-b.svg")',
-      },
+      },*/
       animation: {
         'spin-slow': 'spin 6s linear infinite',
       },
