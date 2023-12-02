@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-import avatar from "./public/site-bg.svg";
-import bgexplosion from "./public/bg-explosion.png";
+import avatar from "./public/site-b.svg";
+import bgexplosion from "./public/bg-explosio.png";
 import bgcircles from "./public/bg-circles.png";
-import circlestar from "./public/circle-star.svg";
+import circlestar from "./public/circle-sta.svg";
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
