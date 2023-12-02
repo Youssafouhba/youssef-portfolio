@@ -2,7 +2,7 @@
 const nextConfig = {
 
   basePath: "/youssef-portfolio",
-  reactStrictMode: true,
+
   swcMinify: true,
    eslint: {
     // Warning: This allows production builds to successfully complete even if
