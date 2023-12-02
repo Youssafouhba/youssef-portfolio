@@ -25,13 +25,13 @@ module.exports = {
         primary: '#131424',
         secondary: '#393A47',
         accent: '#F13024',
-      },/*
+      },
       backgroundImage: {
-        explosion: "url('./bg-explosio.png')",
-        circles: 'url("./bg-circles.png)',
-        circleStar: 'url("./circle-sta.svg")',
-        site: 'url("./site-b.svg")',
-      },*/
+        explosion: "url('/bg-explosio.png')",
+        circles: 'url("/bg-circles.png)',
+        circleStar: 'url("/circle-sta.svg")',
+        site: 'url("/site-b.svg")',
+      },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
       },
