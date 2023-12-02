@@ -1,4 +1,4 @@
-import './styles/globals.css';
+import '../styles/globals.css';
 
 
 //componnents
@@ -26,6 +26,6 @@ function MyApp({ Component, pageProps }) {
     </AnimatePresence>
   </Layout>
  );
-}
+};
 
 export default MyApp;
