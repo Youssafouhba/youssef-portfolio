@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-import avatar from "./public/site-bg.svg",
+import avatar from "./public/site-bg.svg";
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './pages/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
 
     // Or if using `src` directory:
