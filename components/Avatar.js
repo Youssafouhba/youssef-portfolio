@@ -1,6 +1,6 @@
 // next img
 import Image from "next/image";
-import avatar from "../public/site-bg.svg"
+import avatar from "../public/avatar.png"
 
 const Avatar = () => {
   return (
