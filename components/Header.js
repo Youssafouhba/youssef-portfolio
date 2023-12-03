@@ -1,7 +1,7 @@
 //next image
 import Image from "next/image"
 
-import logo from "../public/logo.svg"
+import logo from "../public/logo.png"
 
 //next link
 import Link from "next/link";
@@ -21,7 +21,7 @@ const Header = () => {
         <Link href={'/'}>
           <Image 
           src={logo} 
-          width={220} 
+          width={420} 
           height={48} 
           alt='' 
           priority={true}
