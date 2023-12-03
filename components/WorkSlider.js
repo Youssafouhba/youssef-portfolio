@@ -94,19 +94,19 @@ const WorkSlider = () => {
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
               {slide.images.map((image,index) => {
                 return (
-                  
+                  <Link href={'image.link'}>
                 <div className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
                   <div className='flex items-center justify-center relative overflow-hidden group'
                   key={index}>
                     {/** image */}
-                    <Link href={'image.link'}>
+                    
                       <Image 
                         src={image.path}
                         width={500}
                         height={300}
                         alt=''
                       />
-                    </Link>
+                    
                     {/* overlly gradiant*/}
                     <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#a3065c] to-[#4a22bd]
                     opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
@@ -130,7 +130,7 @@ const WorkSlider = () => {
                       </div>
                   </div>
                 </div>
-
+</Link>
                 );
               })}
             </div>
