@@ -24,6 +24,7 @@ const Header = () => {
           width={420} 
           height={48} 
           alt='' 
+          className='xl:h-4'
           priority={true}
           />
         </Link>
