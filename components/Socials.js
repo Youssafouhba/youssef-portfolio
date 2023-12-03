@@ -17,10 +17,10 @@ const Socials = () => {
     <Link href={''} className='hover:text-accent transition-all duration-300'>
       <RiYoutubeLine />
     </Link>
-    <Link href={''} className='hover:text-accent transition-all duration-300'>
+    <Link href={'https://instagram.com/youssef_ouhba?igshid=MzNlNGNkZWQ4Mg=='} className='hover:text-accent transition-all duration-300'>
       <RiInstagramLine />
     </Link>
-    <Link href={''} className='hover:text-accent transition-all duration-300'>
+    <Link href={'https://www.facebook.com/youssef.ouhba/'} className='hover:text-accent transition-all duration-300'>
       <RiFacebookLine />
     </Link>
     <Link href={''} className='hover:text-accent transition-all duration-300'>
@@ -29,6 +29,7 @@ const Socials = () => {
     <Link href={''} className='hover:text-accent transition-all duration-300'>
       <RiBehanceLine />
     </Link>
+    
     <Link href={''} className='hover:text-accent transition-all duration-300'>
       <RiPinterestLine />
     </Link>
