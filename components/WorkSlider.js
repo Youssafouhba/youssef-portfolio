@@ -5,10 +5,12 @@ const workslider = {
       images: [
         {
           title: 'Sport Club',
+          link: 'https://ezzouhayli-project.pages.dev',
           path: './thumb1.jpg',
         },
         {
           title: 'title',
+          link: 'http://ensa-mcours.epizy.com/',
           path: './thumb2.jpg',
         },
         {
@@ -86,7 +88,7 @@ const WorkSlider = () => {
             <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
               {slide.images.map((image,index) => {
                 return (
-                  <Link href={'https://ezzouhayli-project.pages.dev'}>
+                  <Link href={image.link}>
                 <div className='relative rounded-lg overflow-hidden flex items-center justify-center group'>
                   <div className='flex items-center justify-center relative overflow-hidden group'
                   key={index}>
