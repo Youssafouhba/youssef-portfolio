@@ -30,7 +30,7 @@ module.exports = {
         explosion: 'url("/avatar.png")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
-        site: 'url("/site-bg.svg")',
+        site: 'url("https://raw.githubusercontent.com/Youssafouhba/youssef-portfolio/e8d70af537d2ba979ecf4f6ca5f2b16095b6e9ee/site-b.svg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
