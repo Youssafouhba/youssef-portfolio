@@ -37,7 +37,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-          As an electronics engineering student and full-stack developer, 
+          As a computer sciences engineering student and full-stack developer, 
           I have sharpened my skills by independently creating a variety of websites and applications. 
           These projects were not tied to any particular company, but rather focused on enhancing my technical capabilities.
         </motion.p>
