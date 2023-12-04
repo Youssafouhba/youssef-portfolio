@@ -21,10 +21,9 @@ const Header = () => {
         <Link href={'/'}>
           <Image 
           src={logo} 
-          width={420} 
+          width={220} 
           height={48} 
           alt='' 
-          className='h-[45px]'
           priority={true}
           />
         </Link>
