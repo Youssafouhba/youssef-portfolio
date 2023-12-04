@@ -41,16 +41,16 @@ const aboutData = [
     ],
   },
   {
-    title: 'awards',
+    title: 'certifications',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
+        title: 'Meta Front-End Dvelopper',
+        stage: '2022 - 2023',
+      },/*
       {
         title: 'Adobe Design Achievement Awards - Finalist',
         stage: '2009 - 2010',
-      },
+      },*/
     ],
   },
   {
