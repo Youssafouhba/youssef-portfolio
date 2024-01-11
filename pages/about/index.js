@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Document, Page } from 'react-pdf';
+
 // icons
 import {
   FaHtml5,
