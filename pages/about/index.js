@@ -105,7 +105,7 @@ import {fadeIn} from '../../variants';
 const About = () => {
 
   const handleButtonClick = () => {
-    window.open("https://github.com/Youssafouhba/youssef-portfolio/blob/main/public/cv.pdf", '_blank');
+    window.open("https://github.com/Youssafouhba/youssef-portfolio/cv.pdf", '_blank');
   };
 
   const [index,setindex] = useState(0);
