@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Document, Page } from 'react-pdf';
 // icons
 import {
   FaHtml5,
@@ -7,6 +8,7 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaJava,
 } from "react-icons/fa";
 
 import {
@@ -30,60 +32,61 @@ const aboutData = [
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
+          <SiFramer/>,
+          <FaJava/>,
           <FaWordpress />,
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma />, <SiAdobexd />],
       },
     ],
   },
-  {
-    title: 'certifications',
+ /* {
+    title: 'awards',
     info: [
       {
-        title: 'Meta Front-End Dvelopper',
-        stage: '2022 - 2023',
-      },/*
+        title: 'Webby Awards - Honoree',
+        stage: '2011 - 2012',
+      },
       {
         title: 'Adobe Design Achievement Awards - Finalist',
         stage: '2009 - 2010',
-      },*/
+      },
     ],
-  },
+  },*/
   {
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Internship In Cyber Security - ONRST',
+        stage: '2022 - 2023',
       },
-      {
+     /* {
         title: 'Web Developer - ABC Agency',
         stage: '2010 - 2012',
       },
       {
         title: 'Intern - DEF Corporation',
         stage: '2008 - 2010',
-      },
+      },*/
     ],
   },
   {
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Web Development - ENSA-MARACKECH',
+        stage: '2024',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Computer Science Student - ENSA-MARACKECH',
+        stage: '2023',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Certified Front-end Developper - Meta',
+        stage: '2022-2023',
       },
     ],
   },
@@ -98,7 +101,13 @@ import CountUp from "react-countup";
 import { motion } from 'framer-motion';
 import {fadeIn} from '../../variants';
 
+
 const About = () => {
+
+  const handleButtonClick = () => {
+    window.open("/about/cv.pdf", '_blank');
+  };
+
   const [index,setindex] = useState(0);
   console.log(index);
   return(
@@ -131,9 +140,11 @@ const About = () => {
           animate='show'
           exit='hidden'
           className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-          Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, 
-          when an unknown printer took a 
+          <button
+           onClick={handleButtonClick}
+           className='border-b-4'
+           > Go to My Resume</button>
+         
           </motion.p>
           {/* counters */}
           <motion.div 
@@ -147,7 +158,7 @@ const About = () => {
                 <div className='relative flex-1 after:w-[1px] after:h-full
                 after:bg-white/10 after:absolute after:top-0 after:right-0 '>
                   <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                    <CountUp start={0} end={10} duration={5}/>+
+                    <CountUp start={0} end={3} duration={7}/>+
                   </div>
                   <div className='text-xs uppercase trancking-[1px] leading-[1.4]
                     max-w-[100px] '>
@@ -158,7 +169,7 @@ const About = () => {
                 <div className='relative flex-1 after:w-[1px] after:h-full
                 after:bg-white/10 after:absolute after:top-0 after:right-0 '>
                   <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                    <CountUp start={0} end={250} duration={5}/>+
+                    <CountUp start={0} end={10} duration={5}/>+
                   </div>
                   <div className='text-xs uppercase trancking-[1px] leading-[1.4] max-w-[100px] '>
                     Satisfied clients
@@ -168,7 +179,7 @@ const About = () => {
                 <div className='relative flex-1 after:w-[1px] after:h-full
                 after:bg-white/10 after:absolute after:top-0 after:right-0 '>
                   <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                    <CountUp start={0} end={650} duration={5}/>+
+                    <CountUp start={0} end={30} duration={5}/>+
                   </div>
                   <div className='text-xs uppercase trancking-[1px] leading-[1.4]
                         max-w-[100px] '>
@@ -178,7 +189,7 @@ const About = () => {
                 {/* awards */}
                <div className='relative flex-1'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5}/>+
+                  <CountUp start={0} end={4} duration={5}/>+
                 </div>
                 <div className='text-xs uppercase trancking-[1px] leading-[1.4]
                 max-w-[100px] '>
