@@ -7,13 +7,13 @@ import {
   FaJs,
   FaReact,
   FaWordpress,
+  FaPhp,
   FaFigma,
   FaJava,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
@@ -32,7 +32,7 @@ const aboutData = [
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer/>,
+           <FaPhp/>,
           <FaJava/>,
           <FaWordpress />,
         ],
