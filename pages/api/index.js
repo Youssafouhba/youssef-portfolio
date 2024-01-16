@@ -1,7 +1,7 @@
 import {sendEmail} from './email';
 
 export default function handler(req, res) {
-  if (req.method === 'POST') {
+  if (req.method !== 'POST') {
     const { name, email, message } = req.body;
 
     // Vérifier si toutes les données requises sont présentes
