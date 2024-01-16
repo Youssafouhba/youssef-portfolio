@@ -1,7 +1,5 @@
 import {sendEmail} from './email';
 
-import { sendEmail } from './email';
-
 export default function handler(req, res) {
   if (req.method === 'POST') {
     const { name, email, message } = req.body;
