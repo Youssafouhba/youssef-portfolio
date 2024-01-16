@@ -57,7 +57,7 @@ const Home = () => {
     {/* image*/}
     <div className='w-[1200px] h-full absolute right-0 bottom-0'>
       {/**bg img */}
-      <div style={{backgroundImage: `url("https://raw.githubusercontent.com/Youssafouhba/youssef-portfolio/main/bg-explosio.png")`}} className=" xl xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
+      <div style={{backgroundImage: `url("https://raw.githubusercontent.com/Youssafouhba/youssef-portfolio/main/bg-explosio.png")`}} className="bg-contain xl xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0">
       </div>
       {/*particles*/}
       <ParticlesContainer />
