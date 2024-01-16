@@ -21,7 +21,7 @@ const Contact = () => {
 
     // Envoyer le message côté serveur
     try {
-      const response = await fetch('https://youssafouhba.github.io/youssef-portfolio/api', {
+      const response = await fetch('https://youssafouhba.github.io/youssef-portfolio/api/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
