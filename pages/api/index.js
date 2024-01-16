@@ -1,14 +1,15 @@
 import {sendEmail} from './email';
 
 export default function handler(req, res) {
-  res.status(405).json({ message: 'Method Not Allowed' });
-  } else {
-    const { name, email, message } = req.body;
+  if (req.method === 'POST') {
+    res.status(405).json({ message: 'Method Not Allowed' });
+    } else {
+      const { name, email, message } = req.body;
 
-    // Vérifier si toutes les données requises sont présentes
-    if (!name || !email || !message) {
-      return res.status(400).json({ message: 'Missing required fields' });
-    }
+      // Vérifier si toutes les données requises sont présentes
+      if (!name || !email || !message) {
+        return res.status(400).json({ message: 'Missing required fields' });
+      }
 
     try {
       // Appeler une fonction utilitaire pour envoyer l'email (par exemple, en utilisant SendGrid)
