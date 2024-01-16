@@ -28,8 +28,7 @@ const Services = () => {
             animate= 'show'
             exit='hidden'
             className='mb-4 max-w-[400px] mx-auto lg:mx-0'>
-            There are many variations of passages of Lorem Ipsum available, 
-            but the majority have suffered alteration in some form, by injected humour,
+             Discover our comprehensive range of services designed to elevate your business. From web design and development to SEO optimization and copywriting.
           </motion.p>
         </div>
         {/* slider */}
