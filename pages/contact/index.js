@@ -42,7 +42,7 @@ const Contact = () => {
         setStatus('Message sending failed&');
       }
     } catch (error) {
-      setStatus('Message sending failed');
+        setStatus('Message sending failed');
     }
   };
 
