@@ -14,29 +14,30 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Our brand is a reflection of our commitment to creativity, innovation, and exceptional user experiences.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Seamlessly blending creativity and usability, we craft visually stunning experiences that inspire and engage.',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'We transform ideas into powerful solutions, leveraging cutting-edge technologies and clean code.',
   },
   {
     icon: <RxReader />,
     title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'From engaging website content to compelling marketing campaigns, our words inspire action and drive results.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'We optimize websites to reach the top of search engine results, driving organic traffic and boosting online visibility.',
   },
 ];
+
 
 // import swiper react components 
 import { Swiper,SwiperSlide } from "swiper/react";
