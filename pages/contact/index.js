@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-
 import {Circles} from "/components/Circles";
 
 import {BsArrowRight} from 'react-icons/bs';
@@ -13,35 +12,37 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [subject, setSubject] = useState('');
+  const [status, setStatus] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setStatus('Sending...');
+
     // Envoyer le message côté serveur
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('../api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email, subject, message }),
+        body: JSON.stringify({ name, email,message }),
       });
+      const data = await response.json();
 
       if (response.ok) {
         // Message envoyé avec succès
-        console.log('Message sent successfully');
+        setStatus('Message sent successfully');
         // Réinitialiser les champs du formulaire
         setName('');
         setEmail('');
         setMessage('');
-        setSubject('');
       } else {
         // Erreur lors de l'envoi du message
-        console.error('Error sending message');
+        setStatus('Message sending failed&');
       }
     } catch (error) {
-      console.error('Error sending message', error);
+      setStatus('Message sending failed');
     }
   };
 
@@ -76,19 +77,12 @@ const Contact = () => {
               onChange={(e) => setName(e.target.value)} 
               className='input'/>
               <input 
-              type="text"
+              type="email"
               placeholder="email" 
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className='input'/>
             </div>
-            <input 
-            type="text" 
-            placeholder="subject" 
-            className='input'
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-          />
             <textarea 
             placeholder="message" 
             className='textarea'
@@ -107,6 +101,7 @@ const Contact = () => {
               group-hover:-translate-y-0 group-hover:opacity-100 transition-all 
               duration-300 absolute text-[22px]'/>
             </button>
+            {status && <p>{status}</p>}
           </motion.form>
         </div>
       </div>
