@@ -2,7 +2,9 @@ import {sendEmail} from './email';
 
 export default function handler(req, res) {
   if (req.method === 'POST') {
-          const { name, email, message } = req.body;
+          res.status(405).json({ message: 'Method Not Allowed' });
+    } else {
+     const { name, email, message } = req.body;
 
       // Vérifier si toutes les données requises sont présentes
       if (!name || !email || !message) {
@@ -19,7 +21,6 @@ export default function handler(req, res) {
       console.error('Error sending email', error);
       return res.status(500).json({ message: 'Error sending email' });
     }
-    } else {
-    res.status(405).json({ message: 'Method Not Allowed' });
+   
   }
 }
