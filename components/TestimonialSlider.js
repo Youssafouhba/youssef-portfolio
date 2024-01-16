@@ -6,21 +6,21 @@ const testimonialData = [
     name: 'Anne Smith',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+       'We had the pleasure of partnering with Ouhba-Youssef on our marketing campaign, and the results speak for themselves.',
   },
   {
     image: './t-avt-2.png',
     name: 'Jane Doe',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+            "Working with Ouhba-Youssef has been an absolute pleasure. Their attention to detail, exceptional communication skills, and ability to understand our unique needs have made a significant impact on our project's success. ",
   },
   {
     image: './t-avt-3.png',
     name: 'Jhon Doe',
     position: 'Customer',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'Working with Ouhba-Youssef was a game-changer for our business. Their SEO strategies and optimizations catapulted our website to the top of search engine rankings, significantly increasing our organic traffic and online visibility.',
   },
 ];
 
