@@ -24,6 +24,10 @@ export const navData = [
     path: '/contact',
     icon: <HiEnvelope />,
   },
+    {
+    name: 'api',
+    path: '/api',
+  },
 ];
 //nest link
 import Link from 'next/link';
