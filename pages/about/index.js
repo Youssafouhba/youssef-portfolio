@@ -5,11 +5,13 @@ import {
   FaHtml5,
   FaCss3,
   FaJs,
+  FaPhp,
   FaReact,
   FaWordpress,
-  FaPhp,
   FaFigma,
   FaJava,
+  FaAngular,
+  FaSymfony,
 } from "react-icons/fa";
 
 import {
@@ -27,14 +29,13 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
+          <FaJava/>,
+          <FaAngular />,
+          <FaSymfony />,
+          <FaPhp/>,
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-           <FaPhp/>,
-          <FaJava/>,
-          <FaWordpress />,
         ],
       },
       {
@@ -81,10 +82,6 @@ const aboutData = [
         stage: '2024',
       },
       {
-        title: 'Computer Science Student - ENSA-MARACKECH',
-        stage: '2023',
-      },
-      {
         title: 'Certified Front-end Developper - Meta',
         stage: '2022-2023',
       },
@@ -105,7 +102,7 @@ import {fadeIn} from '../../variants';
 const About = () => {
 
   const handleButtonClick = () => {
-    window.open("https://youssafouhba.github.io/youssef-portfolio/cv.pdf", '_blank');
+    window.open("/about/cv.pdf", '_blank');
   };
 
   const [index,setindex] = useState(0);
