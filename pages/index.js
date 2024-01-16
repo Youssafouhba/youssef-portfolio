@@ -37,9 +37,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-          As a computer sciences engineering student and full-stack developer, 
-          I have sharpened my skills by independently creating a variety of websites and applications. 
-          These projects were not tied to any particular company, but rather focused on enhancing my technical capabilities.
+            As a computer science engineering student and full-stack developer, I have independently built a diverse range of websites and applications, strategically designed to enhance my technical prowess. These projects were not affiliated with any particular company, allowing me the freedom to explore and refine my skills to their fullest potential.
         </motion.p>
         {/*btn*/}
         <div className='flex justify-center xl:hidden'>
