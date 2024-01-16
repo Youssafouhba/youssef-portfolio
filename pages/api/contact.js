@@ -1,4 +1,4 @@
-import sendEmail from './sendEmail';
+import {sendEmail} from './email';
 
 export default function handler(req, res) {
   if (req.method === 'POST') {
