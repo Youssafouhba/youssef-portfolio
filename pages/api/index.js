@@ -1,6 +1,7 @@
 import {sendEmail} from './email';
 
 export default function handler(req, res) {
+  /*
   if (req.method === 'POST') {
           res.status(405).json({ message: 'Method Not Allowed' });
     } else {
@@ -22,5 +23,5 @@ export default function handler(req, res) {
       return res.status(500).json({ message: 'Error sending email' });
     }
    
-  }
+  }*/
 }
