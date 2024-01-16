@@ -21,7 +21,7 @@ const Contact = () => {
 
     // Envoyer le message côté serveur
     try {
-      const response = await fetch('/contact', {
+      const response = await fetch('./contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
