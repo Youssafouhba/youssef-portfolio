@@ -1,4 +1,4 @@
-import {sendEmail} from '../api/email';
+import {sendEmail} from '../../api/email';
 
 export default function handler(req, res) {
   if (req.method === 'POST') {
