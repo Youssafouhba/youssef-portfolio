@@ -27,7 +27,7 @@ const handleSubmit = async (e) => {
 
     const options = {
       hostname: 'youssafouhba.github.io', // Remplacez par l'URL du serveur
-      path: '/components/email',
+      path: '/youssef-portfolio/components/email',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
