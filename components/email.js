@@ -1,15 +1,14 @@
 import nodemailer from 'nodemailer';
 
 import { NextResponse } from 'next/server';
-
 const cros = require('cors');
 const app = express();
 app.use(
   cros({
-    origin: "",
+    origin: "https://youssafouhba.github.io/youssef-portfolio/contact",
     methods: ["POST"],
   })
-)
+);
 
 export async function POST(request) {
    try {
