@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {Circles} from "/components/Circles";
+import {sendEmail} from '../api/email';
 
 import {BsArrowRight} from 'react-icons/bs';
 
@@ -20,6 +21,8 @@ const Contact = () => {
 
     // Envoyer le message côté serveur
     try {
+        await sendEmail(nom,email,message);
+      /*      
       const response = await fetch('https://youssafouhba.github.io/youssef-portfolio/about', {
         method: 'POST',
         headers: {
@@ -39,7 +42,7 @@ const Contact = () => {
       } else {
         // Erreur lors de l'envoi du message
         setStatus('Message sending failed&');
-      }
+      }*/
     } catch (error) {
       setStatus('Message sending failed');
     }
