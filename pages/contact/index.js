@@ -26,7 +26,7 @@ const handleSubmit = async (e) => {
     const data = JSON.stringify({ name, email, message });
 
     const options = {
-      hostname: 'https//youssafouhba.github.io', // Remplacez par l'URL du serveur
+      hostname: 'youssafouhba.github.io', // Remplacez par l'URL du serveur
       path: '/components/email',
       method: 'POST',
       headers: {
