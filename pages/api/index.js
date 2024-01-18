@@ -1,4 +1,4 @@
-import {sendEmail} from './email';
+import {sendEmail} from '../email';
 
 const handler = async (req, res) => {
   try {
