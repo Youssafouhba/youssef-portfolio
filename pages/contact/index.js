@@ -13,7 +13,14 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
-
+  const cros = require('cors');
+  const app = express();
+    app.use(
+      cros({
+        origin: "https://youssafouhba.github.io/youssef-portfolio/components/email",
+        methods: ["POST"],
+    })
+  );
 const https = require('https');
 
 const handleSubmit = async (e) => {
