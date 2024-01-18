@@ -14,37 +14,59 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const http = require('http');
 
-    setStatus('Sending...');
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    // Envoyer le message côté serveur
-    try {    
-      const response = await fetch('./components/email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email,message }),
+  setStatus('Sending...');
+
+  // Envoyer le message côté serveur
+  try {
+    const data = JSON.stringify({ name, email, message });
+
+    const options = {
+      hostname: 'https//youssafouhba.github.io', // Remplacez par l'URL du serveur
+      path: '/components/email',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': data.length,
+      },
+    };
+
+    const req = http.request(options, (res) => {
+      let responseData = '';
+
+      res.on('data', (chunk) => {
+        responseData += chunk;
       });
-      const data = await response.json();
 
-      if (response.ok) {
-        // Message envoyé avec succès
-        setStatus('Message sent successfully');
-        // Réinitialiser les champs du formulaire
-        setName('');
-        setEmail('');
-        setMessage('');
-      } else {
-        // Erreur lors de l'envoi du message
-        setStatus('Message sending failed&');
-      }
-    } catch (error) {
+      res.on('end', () => {
+        if (res.statusCode === 200) {
+          // Message envoyé avec succès
+          setStatus('Message sent successfully');
+          // Réinitialiser les champs du formulaire
+          setName('');
+          setEmail('');
+          setMessage('');
+        } else {
+          // Erreur lors de l'envoi du message
+          setStatus('Message sending failed');
+        }
+      });
+    });
+
+    req.on('error', (error) => {
       setStatus('Message sending failed');
-    }
-  };
+    });
+
+    req.write(data);
+    req.end();
+  } catch (error) {
+    setStatus('Message sending failed');
+  }
+};
 
   return (
     <div className='h-full bg-primary/30'>
