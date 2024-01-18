@@ -14,7 +14,7 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState('');
 
-const http = require('http');
+const https = require('https');
 
 const handleSubmit = async (e) => {
   e.preventDefault();
@@ -35,7 +35,7 @@ const handleSubmit = async (e) => {
       },
     };
 
-    const req = http.request(options, (res) => {
+    const req = https.request(options, (res) => {
       let responseData = '';
 
       res.on('data', (chunk) => {
