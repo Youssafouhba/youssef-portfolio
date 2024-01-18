@@ -7,12 +7,6 @@ import {BsArrowRight} from 'react-icons/bs';
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../../variants";
-
-const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [status, setStatus] = useState('');
   const cros = require('cors');
   const app = express();
     app.use(
@@ -21,6 +15,12 @@ const Contact = () => {
         methods: ["POST"],
     })
   );
+const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState('');
+
 const https = require('https');
 
 const handleSubmit = async (e) => {
